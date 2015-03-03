@@ -10,6 +10,8 @@ use Yii;
  * @property integer $id
  * @property string $title
  * @property string $slug
+ * @property integer $authors_count
+ * @property integer $users_count
  * @property string $date_created
  * @property string $date_updated
  *
@@ -34,7 +36,8 @@ class Book extends \common\base\ActiveRecord
         return [
             [['title', 'slug'], 'required'],
             [['date_created', 'date_updated'], 'safe'],
-            [['title', 'slug'], 'string', 'max' => 150]
+            [['title', 'slug'], 'string', 'max' => 150],
+            [['authors_count', 'users_count'], 'integer']
         ];
     }
 

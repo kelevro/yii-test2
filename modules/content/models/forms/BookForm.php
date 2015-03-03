@@ -59,7 +59,7 @@ class BookForm extends Model
     public function rules()
     {
         return [
-            [['title', 'slug'], 'required'],
+            [['title', 'slug', 'authorsText'], 'required'],
             [['title', 'slug'], 'string', 'max' => 150],
             [['authors', 'authorsText', 'users', 'usersText'], 'safe'],
         ];
@@ -121,6 +121,8 @@ class BookForm extends Model
         foreach (array_filter($added) as $id) {
             $this->book->link('authors', Author::findOne($id));
         }
+        $this->book->authors_count = $this->book->getAuthors()->count();
+        $this->book->save(false, ['authors_count']);
     }
 
     protected function processUsers()
@@ -138,5 +140,7 @@ class BookForm extends Model
         foreach (array_filter($added) as $id) {
             $this->book->link('users', Author::findOne($id));
         }
+        $this->book->users_count = $this->book->getUsers()->count();
+        $this->book->save(false, ['users_count']);
     }
 }
