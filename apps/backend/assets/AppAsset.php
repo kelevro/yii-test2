@@ -32,14 +32,10 @@ class AppAsset extends AssetBundle
         'js/jquery.flot.stack.js',
         'js/utils.js',
         'js/theme.js',
-        'js/product.js',
-        'js/serp.js',
-        'js/serp-update.js',
     ];
     public $depends = [
         'yii\bootstrap\BootstrapAsset',
         'yii\web\JqueryAsset',
         'yii\web\YiiAsset',
-        'yii\jui\SortableAsset',
     ];
 }

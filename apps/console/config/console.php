@@ -16,6 +16,7 @@ return [
                 ],
             ],
         ],
+
         'authManager' => [
             'class'           => '\yii\rbac\DbManager',
             'itemTable'       => 'auth_item',

@@ -34,7 +34,7 @@ backend\assets\AppAsset::register($this);
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">RK Electronics</a>
+            <a class="navbar-brand" href="/"><?=Yii::$app->id?></a>
         </div>
         <ul class="nav navbar-nav pull-right hidden-xs">
             <li>

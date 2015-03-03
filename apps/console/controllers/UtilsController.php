@@ -48,9 +48,8 @@ class UtilsController extends \yii\console\Controller
         $user->email = $email;
         $user->password = $pass;
         if ($user->save()) {
-
-            \Yii::$app->authManager->assign(\Yii::$app->authManager->getRole('admin'), $user->id);
-
+            $role = \Yii::$app->authManager->getRole('admin');
+            \Yii::$app->authManager->assign($role, $user->id);
             $this->stdout('User created');
         } else {
             $this->stderr('Error creating user');

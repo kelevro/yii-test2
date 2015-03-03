@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'id'                  => 'app-backend',
+    'id'                  => 'Yii test backend',
     'bootstrap'             => ['log'],
     'controllerNamespace' => 'backend\controllers',
     'viewPath'            => '@app/apps/backend/views',

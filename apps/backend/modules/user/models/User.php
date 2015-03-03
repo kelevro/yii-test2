@@ -247,7 +247,7 @@ class User extends ActiveRecord implements IdentityInterface
                 $this->password_hash = \Yii::$app->getSecurity()->generatePasswordHash($this->password);
             }
             if ($this->isNewRecord) {
-                $this->auth_key = \Yii::$app->getSecurity()->generateRandomKey();
+                $this->auth_key = \Yii::$app->getSecurity()->generateRandomString();
             }
 
             $deleted = $this->getDirtyAttributes(['is_deleted']);
