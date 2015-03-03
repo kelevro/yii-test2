@@ -1,0 +1,1 @@
+<?=$indexWidgetClass::widget()?>

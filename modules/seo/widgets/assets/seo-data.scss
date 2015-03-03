@@ -1,0 +1,48 @@
+.seo-data-widget-backend {
+    .title-label { cursor: pointer }
+}
+
+
+
+
+.seo-data-widget {
+    .seo-data-edit {
+        position: absolute;
+        z-index: 10000;
+        top: 0;
+        right: 0;
+        height: 30px;
+        line-height: 30px;
+        width: 100px;
+        text-align: center;
+
+        background-color: #8b0000;
+    }
+    .seo-data-edit a {
+        color: #ffffff;
+    }
+    .seo-data-edit.has-data {
+        background-color: #006400;
+    }
+
+    #seoForm form {
+        margin-bottom: 0;
+    }
+
+    #seoForm .field-box {
+        margin-bottom: 20px;
+        margin-left: 0;
+        float: left;
+        width: 100%;
+    }
+
+    #seoForm label {
+        display: inline-block;
+        float: left;
+        font-weight: 600;
+        font-size: 13px;
+        width: 140px;
+        text-align: left;
+        line-height: 34px;
+    }
+}

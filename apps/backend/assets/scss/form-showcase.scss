@@ -1,0 +1,148 @@
+
+.form-wrapper {
+    margin-bottom: 40px;
+    .field-box {
+        margin-bottom: 20px;
+        margin-left: 0;
+        float: left;
+        width: 100%;
+
+        &.field-checkbox,
+        &.no-margin
+        {
+            margin-bottom: 0;
+        }
+    }
+
+    label {
+        display: inline-block;
+        float: left;
+        font-weight: 600;
+        font-size: 13px;
+        width: 140px;
+        text-align: left;
+        line-height: 34px;
+    }
+    input:-moz-placeholder {
+        font-style: italic;
+    }
+    input:-ms-input-placeholder {
+        font-style: italic;
+    }
+    input::-webkit-input-placeholder {
+        font-style: italic;
+    }
+
+    .predefined {
+        position: relative;
+        input {
+            padding-left: 40px;
+        }
+        .value {
+            position: absolute;
+            top: 6px;
+        }
+    }
+
+    div.checkbox {
+        cursor: pointer;
+        color: #555;
+    }
+    label.radio {
+        position: relative;
+        left: -20px;
+        width: 100%;
+        cursor: pointer;
+        color: #555;
+    }
+    div.checkbox,
+    div.radio {
+        cursor: pointer;
+        padding-left: 0;
+        margin-left: 140px;
+        font-weight: lighter;
+        input[type="checkbox"],
+        input[type="radio"] {
+            float: none;
+            font-size: large;
+            margin-left: 0px;
+        }
+    }
+    div.checkbox-inline {
+        padding-left: 0;
+    }
+    div.checkbox-inline .checkbox {
+        margin-left: 0;
+    }
+
+    .alert-msg {
+        display: block;
+        margin-bottom: 0;
+        margin-top: 2px;
+        i {
+            font-size: 14px;
+        }
+    }
+
+    .field-box {
+        i.fa { display: none; }
+
+        /* error */
+        &.has-error {
+            label,
+            .alert-msg {
+                color: rgb(199, 57, 57);
+            }
+            input {
+                border-color: rgb(199, 57, 57);
+            }
+            i.fa { display: inline-block; }
+        }
+        /* success */
+        &.success {
+            label,
+            .alert-msg {
+                color: rgb(55, 158, 72);
+            }
+            input {
+                border-color: rgb(55, 158, 72);
+            }
+        }
+    }
+
+    .hint-block {
+        color: grey;
+    }
+
+    .wysi-column {
+        float: left;
+        width: 75%;
+    }
+
+    .column.pull-right {
+        label {
+            display: block;
+            width: 100%;
+        }
+        .ui-select {
+            width: 250px;
+        }
+        .input-group {
+            margin-bottom: 10px;
+            width: 250px;
+        }
+        .input-datepicker {
+            width: 250px;
+        }
+    }
+    .select2-container {
+        margin-left: 0px;
+    }
+}
+
+/*Responsive*/
+@media (max-width: 767px) {
+    .form-wrapper label.radio {
+        left: 0px;
+    }
+}

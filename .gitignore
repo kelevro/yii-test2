@@ -1,0 +1,9 @@
+/yii
+/composer.lock
+.idea/*
+.DS_Store
+
+_devel/hotwork-shema.mwb.bak
+
+**.sass-cache**
+**/scss/*.css

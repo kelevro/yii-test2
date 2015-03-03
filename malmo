@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+define('ROOT', __DIR__);
+define('APP_TYPE', 'console');
+
+//$local = require(__DIR__ . '/etc/console.php');
+
+$locParams = require ROOT . '/etc/params.php';
+$localShared = require ROOT . '/etc/shared.php';
+$local = [];
+mb_internal_encoding('utf-8');
+
+// fcgi doesn't have STDIN defined by default
+defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
+define('CONSOLE_APP', 1);
+
+require(__DIR__ . '/vendor/autoload.php');
+require(__DIR__ . '/vendor/yiisoft/yii2/Yii.php');
+
+$shared = require __DIR__ . '/common/config/shared.php';
+$main  = require __DIR__ . '/apps/console/config/console.php';
+
+$config = yii\helpers\ArrayHelper::merge($shared, $localShared, $main, $local, ['params' => $locParams]);
+
+$application = new yii\console\Application($config);
+return $application->run();

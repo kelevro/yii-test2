@@ -1,0 +1,88 @@
+@round-size: 50px;
+@ronud-color: rgb(56, 156, 240);
+
+.slider-index{
+    form{
+        ul{
+            list-style: none;
+            li{
+                section{
+                    margin-bottom: 10px;
+                    width: 650px;
+                    height: 130px;
+                    border: 2px solid #d3d3d3;
+                    border-radius: 10px;
+                    background: linear-gradient(to bottom, white, rgba(0,0,0,.1));
+                    .image{
+                        width: 155px;
+                        height: 110px;
+                        line-height: 110px;
+                        margin: 0 10px;
+                        float: left;
+                        overflow: hidden;
+                        label{
+                            margin-top: 20px;
+                            border-radius: 10px;
+                            border: 2px solid #d3d3d3;
+                            display: block;
+                            width: 155px;
+                            height: 75px;
+                            position: relative;
+                            background: url("../images/nophoto.png");
+                            cursor: pointer;
+                            &:hover:after{
+                                content: '+';
+                                font-size: 50px;
+                                font-weight: bold;
+                                position: absolute;
+                                display: block;
+                                width: @round-size;
+                                height: @round-size;
+                                background-color: @ronud-color;
+                                left: 50%;
+                                right: 50%;
+                                top: 50%;
+                                bottom: 50%;
+                                margin-top: -(@round-size / 2);
+                                margin-left: -(@round-size / 2);
+                                color: white;
+                                text-align: center;
+                                border-radius: 50%;
+                                line-height: 45px;
+
+                                opacity: .8;
+
+                            }
+
+                            input{
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    .labels{
+                        width: 450px;
+                        float: left;
+                        label{
+                            float: left;
+                            width: 200px;
+                            display: block;
+                            margin: 0px 10px;
+                            line-height: 30px;
+                            input{
+                                float: right;
+                                line-height: 10px;
+                                width: 150;
+                                height: 25px;
+                            }
+                        }
+                        button{
+                            float: left;
+                            margin-right: 20px;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

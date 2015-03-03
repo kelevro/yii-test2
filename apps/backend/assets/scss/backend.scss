@@ -1,0 +1,135 @@
+/* UTILS */
+
+hr {
+    border: none;
+    border-top: 1px solid #dde2e9;
+}
+
+.red { background-color: red !important; }
+.blue { background-color: blue !important; }
+
+.help-link {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.no-field-box-margin .field-box { margin-bottom: 0; }
+
+.form-control.datepicker { width: 100px; }
+.link-filter {
+    border-bottom: 1px dotted #428bca;
+    &:hover {text-decoration: none; }
+}
+
+.checkbox label { width: auto; }
+
+/* FIXES */
+.select2-container.col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* SIR TREVOR EDITOR */
+.st-text-block {
+    &.st-text-block--heading {min-height: 1em;}
+}
+
+.st-block-image {
+    text-align: center;
+    img {
+        width: auto !important;
+        height: auto;
+    }
+}
+.st-block__delete-label {
+    margin-bottom: 0;
+}
+
+.st-block {
+    &.st-quote .st-block__inner {
+        background-color: #f3ffe5;
+    }
+    &.st-head  .st-block__inner {
+        background-color: #ffffdc;
+    }
+}
+
+.st-block__inner {
+    padding: 1.875em 1.875em 1.8em !important;
+}
+
+
+
+/* admin layout */
+.navbar-inverse .pop-dialog .notifications .item.notice > i { color: #2ECC40 }
+
+
+/* styles for admin pages */
+.partner {
+    &.list {
+
+    }
+    &.view {
+
+    }
+
+    .import-status {
+        &.init { background-color: #79af5e }
+        &.parsing { background-color: dimgrey }
+        &.linking { background-color: dimgrey }
+        &.transfering { background-color: dimgrey }
+        &.done { background-color: #008000 }
+        &.error { background-color: red }
+    }
+
+    .limit.over { color: red; }
+}
+
+
+.state {
+    &.paid {
+        color: red;
+    }
+    &.paid.disabled {
+        color: saddlebrown;
+    }
+    &.disabled {
+        color: #808080;
+    }
+}
+
+
+// list tables
+.list {
+    table.table {
+        tr.published td{ background-color: #ebffee; }
+        tr.published.odd td{ background-color: #dff2e2; }
+
+        tr.not-published td { background-color: #e1eae7; }
+        tr.not-published.odd td { background-color: #e1eae7; }
+
+        tr:hover td{ background-color: #f5fafc; }
+
+        td.is_published,
+        td.is_enabled,
+        {
+           text-align: center;
+        }
+    }
+}
+
+
+
+/*
+ * SERP backend
+ */
+
+.serp-groups {
+    .group-1 { background-color: #0074D9 }
+    .group-2 { background-color: #FF4136 }
+    .group-3 { background-color: #2ECC40 }
+    .group-4 { background-color: #FFDC00 }
+    .group-5 { background-color: #85144B }
+}
+
+.serp .has-error { color: red; }

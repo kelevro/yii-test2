@@ -1,0 +1,17 @@
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+    position: inherit;
+}
+
+.field-attributeupdate-is_selectable .radio{
+    display: inline;
+}
+
+.field-attributeupdate-is_selectable .radio input{
+    margin-left: -20px !important;
+}
+
+.field-attributeupdate-is_selectable label{
+    line-height: 23px !important;
+}

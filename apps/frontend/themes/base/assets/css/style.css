@@ -1,0 +1,1359 @@
+@font-face {
+    font-family: "Ubuntu Light";
+    src: local("Ubuntu Light"),
+    url(fonts/Ubuntu-L.ttf);
+}
+
+hr {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    /*font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;*/
+    /*background-image: url(../img/bg.png);*/
+
+    font-family: Ubuntu Light, Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #424242;
+    text-decoration: none;
+}
+
+.conteiner {
+
+    min-height: 100%;
+    margin-bottom: -150px;
+
+}
+
+.footerback {
+    /*--- Блок который находится зади футера и не дает ему налазить на контент*/
+    height: 150px;
+    clear: both;
+}
+
+.up{
+    position: fixed;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #DDDDDD;
+    background-color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    top: 100%;
+    margin-top: -50px;
+    left: 100%;
+    margin-left: -45px;
+    padding: 3px 10px 8px 10px;
+}
+
+.up:hover {
+    background-color: #EEE;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+
+.clear {
+    clear: both;
+    margin: 5px 0;
+}
+
+.line {
+    height: 2px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f5f4f4;
+    width: 100%;
+}
+
+/*----------------menu -------------------*/
+
+.menutop {
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+    line-height: 30px;
+
+}
+
+.menubutton {
+    float: right;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #DDDDDD;
+    height: 17px;
+    margin-top: 17px;
+    /*border-style: solid;*/
+
+}
+
+.menubutton:hover {
+    float: right;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+    color: #E31E24;
+    height: 17px;
+    margin-top: 17px;
+    /*border-style: solid;*/
+
+}
+
+.menubuttonlast {
+    float: right;
+    font-size: 13px;
+    /*border-style: solid;*/
+
+}
+
+.general-card {
+    height: 19px;
+    margin-top: 17px;
+    margin-right: 30px;
+    padding-right: 10px;
+
+
+}
+
+.general-card.show {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #fff;
+    height: 30px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    display: block;
+    background-color: rgb(51, 51, 51);
+}
+
+.menubuttonlast:hover {
+
+}
+
+.cart_more{
+    display: none;
+}
+
+.subscription {
+    float: right;
+    height: 15px;
+    background-position: 0px -80px;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.subscription:hover {
+    color: #E31E24;
+
+}
+
+.enter {
+    float: right;
+    font-family: Ubuntu Light, Arial, Helvetica, sans-serif;
+    height: 15px;
+    background-position: 0px -80px;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 12px;
+
+}
+
+.enter:hover {
+    color: #E31E24;
+
+}
+
+.menubottom {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    /*line-height: 50px;*/
+}
+
+.logo {
+    background-image: url(../img/logo.png);
+    height: 37px;
+    width: 256px;
+    float: left;
+    margin-left: 40px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+.logo:hover {
+    background-image: url(../img/logo01.png);
+}
+
+.logo02 {
+    position: fixed;
+    top: 130px;
+    left: 40px;
+    height: 50px;
+    width: 45px;
+    background-image: url(../img/logo02.png);
+    background-repeat: no-repeat;
+}
+
+/*----------------menu -------------------*/
+
+/*------------спрайт---------------*/
+
+.ok, .oks, .vk, .vks, .f, .fs, .mail, .mails, .serch, .serchs, .basket, .baskets {
+    background-image: url(../img/sprite.png);
+}
+
+.ok, .vk, .f, .mail {
+    float: left;
+    margin: 5px;
+    width: 30px;
+    height: 31px;
+    margin-top: 20px;
+}
+
+.oks, .vks, .fs, .mails {
+    float: left;
+    margin-right: 9px;
+    height: 16px;
+    background-repeat: no-repeat;
+    margin-top: 7px;
+}
+
+.ok {
+    background-position: 0px 0px;
+}
+
+.ok:hover {
+    background-position: -160px 0px;
+}
+
+.oks {
+    background-position: 0px -40px;
+    width: 9px;
+    margin-left: 40px;
+
+}
+
+.oks:hover {
+    background-position: -160px -40px;
+    width: 9px;
+    margin-left: 40px;
+}
+
+.vk {
+    background-position: -40px 0px;
+}
+
+.vk:hover {
+    background-position: -200px 0px;
+}
+
+.vks {
+    background-position: -40px -40px;
+    width: 12px;
+}
+
+.vks:hover {
+    background-position: -200px -40px;
+    width: 12px;
+}
+
+.f {
+    background-position: -80px 0px;
+}
+
+.f:hover {
+    background-position: -240px 0px;
+}
+
+.fs {
+    background-position: -80px -40px;
+    width: 7px;
+}
+
+.fs:hover {
+    background-position: -240px -40px;
+    width: 7px;
+}
+
+.mail {
+    background-position: -120px 0px;
+}
+
+.mail:hover {
+    background-position: -280px 0px;
+}
+
+.mails {
+    background-position: -120px -40px;
+    width: 16px;
+}
+
+.mails:hover {
+    background-position: -280px -40px;
+    width: 16px;
+}
+
+.serch {
+    float: right;
+    width: 15px;
+    height: 15px;
+    background-position: 0px -80px;
+    margin-top: 7px;
+    margin-right: 40px;
+}
+
+.serch:hover {
+    float: right;
+    width: 15px;
+    height: 15px;
+    background-position: -40px -80px;
+    margin-top: 7px;
+}
+
+.basket {
+    margin-left: 15px;
+    margin-right: 4px;
+    width: 10px;
+    height: 15px;
+    background-position: -80px -80px;
+    float: left;
+    margin-top: 2px;
+}
+
+/*------------спрайт конец---------------*/
+
+/*------------------News--------------------*/
+
+.newsconteiner {
+    width: 980px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DDDDDD;
+    background-color: #fff;
+    margin: 15px;
+    padding: 10px;
+    color: #666;
+    padding-bottom: 35px;
+    min-height: 200px;
+}
+
+.newsconteiner h2 {
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.newsconteiner p {
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 25px;
+}
+
+.newsconteiner img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.buttonnews {
+    font-size: 12px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999;
+    float: left;
+    padding: 3px;
+    color: #999;
+    margin-right: 10px;
+}
+
+.buttonnews:hover {
+    border-color: #E31E24;
+    color: #E31E24;
+
+}
+
+.navnews {
+    float: right;
+}
+
+.navnews a{
+    float: left;
+}
+
+.news-nav-conteiner {
+    width: 980px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DDDDDD;
+    background-color: #fff;
+    margin: 15px;
+    padding: 10px;
+    color: #666;
+}
+
+.news-nav-conteiner li {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 3px 0;
+    background-color: #f5f4f4;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+
+
+.product-nav-conteiner {
+    width: 735px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DDDDDD;
+    background-color: #fff;
+    margin: 15px auto;
+    padding: 10px;
+    color: #666;
+}
+
+.product-nav-conteiner li {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #f5f4f4;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.product-nav-conteiner li.active {
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 3px;
+    width: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #f5f4f4;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.product-nav-conteiner li.prev1 {
+    display: none;
+}
+
+.product-nav-conteiner li.next1 {
+    display: none;
+}
+
+.product-nav-conteiner li:hover {
+    background-color: #e0e0e0;
+}
+.product-nav-conteiner li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    padding: 3px 0;
+}
+
+
+.newsconteiner hr {
+    clear: both;
+    margin-bottom: 15px;
+}
+
+.news-nav-conteiner li.active {
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 3px;
+    width: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 3px 0;
+    background-color: #f5f4f4;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.news-nav-conteiner li.prev1 {
+    display: none;
+}
+
+.news-nav-conteiner li.next1 {
+    display: none;
+}
+
+.news-nav-conteiner li:hover {
+    background-color: #e0e0e0;
+}
+
+.news-date {
+    text-align: left;
+    clear: both;
+    font-weight: 700;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.24);
+    margin-bottom: 5px;
+}
+
+/*------------------//News--------------------*/
+
+/*-------------Категории товаров----------------*/
+
+.categoryconteiner {
+    width: 1020px;
+    margin-top: 15px;
+    display: table-cell;
+}
+
+.category {
+    width: 300px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DDDDDD;
+    background-color: #fff;
+    padding: 10px;
+    color: #666;
+    height: 200px;
+    float: left;
+    margin: 6px;
+    margin: 9px;
+    -webkit-filter: grayscale(100%);
+    opacity: 0.8;
+    font-size: 15px;
+    box-sizing: content-box;
+
+}
+
+.category:hover {
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    -moz-transition: 1s ease;
+}
+
+.categorytext {
+    height: 30px;
+
+}
+
+/*----------Категории товаров конец --------------*/
+
+/*--------------------Бренды--------------------*/
+
+.brendsconteiner{
+    width: 850px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DDDDDD;
+    background-color: #fff;
+    padding: 10px;
+    color: #666;
+    min-height: 120px;
+    display: inline-table;
+    margin: 6px;
+}
+
+.brendsconteiner img{
+    float: left;
+    margin-right: 10px;
+}
+
+.brendsconteiner p{
+    text-align: justify;
+    text-indent: 20px;
+    margin: 2px;
+}
+
+.brendsconteiner h1{
+    font-size: 20px;
+    margin: 0px;
+    line-height: 20px;
+    /*border-style: solid; */
+}
+
+.brendsbuttonsite{
+
+    font-size: 12px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999;
+    display: inline;
+    padding: 3px;
+    color: #999;
+    margin: 5px;
+    float: right;
+
+}
+
+.brendsbuttonsite:hover{
+    border-color: #E31E24;
+    color: #E31E24;
+}
+
+
+/*--------------------Бренды конец--------------------*/
+
+
+/*-------------------- Товары --------------------*/
+
+/**/
+
+.left-column {
+    width: 200px;
+    float: left;
+    margin-top: 20px;
+}
+
+.right-column {
+    margin: 20px auto;
+    width: 760px;
+}
+
+.itemconteiner {
+
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DDDDDD;
+    background-color: #fff;
+    padding: 6px;
+    margin: 5px;
+    color: #666;
+    width: 735px;
+    display: inline-table;
+
+}
+
+.itemconteiner .main-image{
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+}
+
+.itemconteiner .product-info{
+    display: inline-block;
+    float: left;
+    text-align: left;
+    max-width: 490px;
+}
+
+.right-column h3 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.item-charecteristic {
+    background-color: #f5f4f4;
+    font-size: 14px;
+    text-align: left;
+    padding: 3px;
+    text-indent: 10px;
+    display: inline-block;
+    width: 220px;
+    margin-top: 4px;
+    margin-right: 2px;
+
+}
+
+.item-price {
+    /*background-color: #f5f4f4;*/
+    font-size: 14px;
+    text-align: left;
+    /*padding: 3px;*/
+
+    display: inline-block;
+    width: 70px;
+    margin-top: 10px;
+    font-weight: 700;
+
+}
+
+.item-price-description {
+    /*background-color: #f5f4f4;*/
+    font-size: 16px;
+    /*padding: 3px;*/
+    margin-top: 10px;
+    display: inline-block;
+
+}
+
+.item-description {
+    background-color: #f5f4f4;
+    font-size: 14px;
+    padding: 3px;
+    margin-top: 4px;
+    display: inline-block;
+    width: 260px;
+}
+
+.itemconteiner img {
+    float: left;
+    margin-right: 10px;
+}
+
+.itembuttonsite {
+    font-size: 12px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999;
+    display: inline;
+    padding: 7px 10px;
+    color: #999;
+    margin: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+.itembuttonsite:hover {
+    background-color: #f5f4f4;
+}
+
+.itembuttonby {
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    display: inline;
+    padding: 7px 10px;
+    color: #fff;
+    margin: 5px;
+    float: right;
+    background-color: #1da300;
+    letter-spacing: 2px;
+}
+
+.itembuttonby:hover {
+    background-color: #13d200;
+}
+
+.item-amount-conteiner {
+    display: inline-block;
+    margin: 5px;
+    float: right;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999;
+    font-size: 12px;
+    height: 33px;
+    overflow: hidden;
+}
+
+.item-amount-minus, .item-amount-plus {
+    font-weight: 700;
+    background-color: #f5f4f4;
+    cursor: pointer;
+    text-indent: 0;
+    height: inherit;
+    text-align: center;
+    width: 23px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.item-amount-plus:hover {
+    background-color: #e0e0e0;
+}
+
+.item-amount-minus:hover {
+    background-color: #e0e0e0;
+}
+
+.item-amount-minus {
+    border-right: 1px solid #999;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+
+}
+
+.item-amount-plus {
+    border-left: 1px solid #999;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.iten-amount-number {
+    min-width: 30px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+
+}
+.iten-amount-number input{
+    border: none;
+    max-width: 50px;
+    display: inline-block;
+    min-width: 30px;
+
+}
+
+.item-amount-total {
+    display: inline-block;
+    float: right;
+    line-height: 33px;
+    height: 33px;
+    margin: 5px;
+}
+
+.checkbox {
+    float: left;
+    line-height: 20px;
+
+}
+
+.checkbox input {
+    background-color: #fff;
+    height: 20px;
+    width: 20px;
+
+}
+
+.checkbox label {
+
+    display: block;
+}
+
+/**/
+
+/*Filters*/
+
+.filter {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #666;
+    margin-right: 15px;
+    padding: 10px;
+    margin-top: 6px;
+}
+
+.filter h4 {
+    margin: 0;
+    padding: 0;
+
+}
+
+.filter input {
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+.filter-value {
+    float: left;
+    max-width: 133px;
+    text-align: left;
+
+}
+
+/*//Filters*/
+
+/*------------oder-list-conteiner-----------*/
+
+.oder-list-conteiner {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    /* height: 100%; */
+    /* max-height: 90%; */
+    overflow-y: auto;
+    position: absolute;
+    width: 200px;
+    margin-left: -52px;
+    margin-top: 39px;
+    /* left: 100%; */
+    border-bottom-left-radius: 4px;
+    /* border-radius: 4px; */
+    padding: 10px;
+    z-index: 999;
+    text-align: left;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.oder-list-item-conteiner {
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    position: relative;
+    height: auto;
+}
+
+.oder-list-item-conteiner div {
+    /*display: inline-block;*/
+    /*margin-left: 5px;*/
+    font-size: 12px;
+
+}
+
+.oder-list-item-button_close {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    left: 100%;
+    margin-left: -15px;
+    /*margin-top: 5px;*/
+    padding: 2px;
+    cursor: pointer;
+}
+
+.oder-list-item-conteiner img {
+    /*display: inline-block;*/
+    /*margin-left: 5px;*/
+    float: left;
+    padding: 0 5px 5px 0;
+}
+
+.oder-list-bottom-row {
+
+}
+
+.oder-list-bottom-row-total_summ {
+    /*display: inline-block;*/
+    text-align: right;
+}
+
+.oder-list-bottom-row-order {
+    text-align: center;
+    background-color: #1da300;
+    padding: 3px 0;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.oder-list-bottom-row-order a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*------------/oder-list-conteiner-----------*/
+
+/*-------------------- Товары конец --------------------*/
+
+/*----Все что в футере-----*/
+.footer {
+    background-color: #fff;
+    height: 150px;
+    border-top-style: solid;
+    border-top-color: #DDDDDD;
+    border-top-width: 1px;
+    /*-moz-box-shadow: 0 0 20px rgba(0,0,0,0.2);  Для Firefox */
+    /*-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.2);  Для Safari и Chrome */
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.2);  Параметры тени */
+
+}
+
+.iconconteiner {
+    display: inline-block;
+    clear: both;
+}
+
+.futerbutton {
+    color: #333;
+    float: left;
+    margin-right: 20px;
+    font-size: 13px;
+    /*border-style: solid;*/
+}
+
+.futerbutton:hover {
+    color: #E31E24;
+}
+
+.logos01 {
+    width: 1000px;
+    margin-top: 10px;
+    height: 40px;
+    background-image: url(../img/logos.png);
+    background-repeat: no-repeat;
+}
+
+.logos02 {
+    width: 1000px;
+    height: 40px;
+    background-image: url(../img/logos.png);
+    background-repeat: no-repeat;
+
+}
+
+/*----Конец футера-----*/
+
+/*----Popup-----*/
+.popup-bg {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: block;
+    opacity: 0.4;
+    position: fixed;
+}
+
+.popup-conteiner {
+    position: fixed;
+    width: 500px;
+    margin-left: -250px;
+    z-index: 999;
+    background-color: #fff;
+    top: 50px;
+    left: 50%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999;
+}
+
+.popup-conteiner input, .popup-conteiner button {
+
+    margin: 10px;
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #bbbbbb;
+    cursor: pointer;
+}
+
+.popup-conteiner button:hover {
+    background-color: #bbb;
+}
+
+.button-close {
+    position: absolute;
+    /*border: 1px solid #eee;*/
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    line-height: 20px;
+    color: red;
+    padding: 2px;
+    font-weight: 700;
+    left: 100%;
+    margin-left: -35px;
+    margin-top: 5px;
+    top: 0;
+    cursor: pointer;
+
+}
+
+/*----/Popup-----*/
+
+/*-------oder--------*/
+
+.ordering-button {
+    border: 1px solid #999;
+    border-radius: 3px;
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    text-indent: 0;
+    line-height: 14px;
+    padding: 67px 5px 5px 5px;
+    background-image: url("../img/cart.png");
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    /*background-color: #13d200;*/
+    cursor: pointer;
+    position: fixed;
+    margin-top: 20px;
+    left: 100%;
+    margin-left: -130px;
+}
+
+.ordering-button:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.ordering-tool_tip {
+    border: 1px solid #0491F5;
+    border-radius: 3px;
+    padding: 5px;
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    /*font-weight: 700;*/
+    color: #0491F5;
+    position: fixed;
+    margin-top: 120px;
+    left: 100%;
+    margin-left: -130px;
+}
+
+/*-------//oder--------*/
+
+/*-------oder page--------*/
+
+.order_page-conteiner {
+    width: 980px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DDDDDD;
+    background-color: #fff;
+    margin: 15px;
+    padding: 10px;
+    color: #666;
+    padding-bottom: 35px;
+    min-height: 200px;
+}
+
+.order_page-button_close {
+    font-weight: 700;
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+}
+
+.order_page-conteiner-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+.order_page-conteiner-table, .order_page-conteiner-table td {
+
+    border: 1px solid #e4e4e4;
+
+}
+
+.total-summ {
+    float: right;
+    background-color: #fff91a;
+    padding: 4px 8px;
+    margin: 10px 0px 10px 10px;
+    border-radius: 4px;
+}
+
+.order-input {
+    margin: 10px;
+    height: 30px;
+    width: 300px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid #bbbbbb;
+    cursor: pointer;
+}
+
+.order-input-descriotion {
+    width: 200px;
+    text-align: right;
+    margin-left: -80px;
+    display: inline-block;
+
+}
+
+/*-------/oder page--------*/
+
+/*---DOC---*/
+
+.doc_category-conteiner{
+    margin: 4px 0;
+}
+
+.doc_kategory-name{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    background-color: #f4f4f4;
+    display: inline-block;
+    height: 30px;
+    padding: 0 10px 0 10px;
+    width: 924px;
+    cursor: pointer;
+}
+
+.doc_kategory-open-button{
+    cursor: pointer;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    padding: 0 10px 0 10px;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 30px;
+    background-color: #999;
+}
+
+.doc_item-name{
+    background-image: url("../img/eye.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    display: block;
+    padding: 3px 0 3px 40px;
+    margin: 5px 0;
+    font-size: 12px;
+    background-color: #f3f3f3;
+}
+
+.doc_item-conteiner{
+    margin: 0 0 10px 35px;
+    padding: 10px 0;
+}
+.doc_item-conteiner-product{
+    margin: 5px 0 5px 0;
+    display: block;
+    text-align: left;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+}
+
+
+/*---/DOC---*/
+.nav-bottom ul{
+    list-style: none;
+    padding: 0;
+}
+.nav-bottom ul li{
+    display: inline-block;
+    padding: 2px 3px;
+}
+
+.search{
+    float: right;
+    margin-right: 37px;
+    padding-top: 2px;
+    line-height: 28px;
+}
+.search input{
+    width: 150px;
+    border: none;
+    height: 21px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: Ubuntu Light, Helvetica;
+    font-size: .8em;
+    line-height: 23px;
+    margin-top: 3px;
+
+
+}
+.search button{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    float: none;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: none;
+}
+.search button:hover{
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menubottom ul{
+    list-style: none;
+    padding-top: 15px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.menubottom ul li{
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+.menubottom ul li div,.menubottom ul li a,.menubottom ul li a:hover,.menubottom ul li div:hover{
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.menubottom div{
+    border: none;
+}
+
+.menubottom li a:hover{
+    text-decoration: none;
+}
+
+.menubottom li{
+    border-right: 1px solid grey;
+}
+.menubottom li:first-of-type,.menubottom li:last-of-type{
+    border: none;
+}
+
+
+.basket{
+    display: inline-block;
+}
+
+.menubuttonlast{
+    position: relative;
+
+}
+
+.menubottom ul li .cart_more{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    padding: 10px;
+}
+.menubottom ul li .cart_more:hover{
+    padding: 10px;
+
+}
+
+.menubottom ul li .general-card,.menubottom ul li .general-card:hover{
+    padding: 3px 7px;
+}
+
+.related-products .item{
+    float: left;
+    max-width: 100px;
+}
+.related-products .item img{
+    float: none;
+}
+
+.card-rk-button{
+    display: none;
+}
+
+.order_page-conteiner-table td{
+    padding: 4px 0;
+}
+
+.category-block{
+    float: left;
+    margin: 20px auto;
+}

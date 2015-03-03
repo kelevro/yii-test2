@@ -1,0 +1,14 @@
+AddDefaultCharset utf-8
+
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+#### Munee .htaccess Code Start ####
+RewriteRule ^(.*\.(?:less|scss|js|coffee|jpg|png|gif|jpeg))$ munee.php?files=/$1 [L,QSA,NC]
+#### Munee .htaccess Code End ####
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index-test.php

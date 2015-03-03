@@ -1,0 +1,36 @@
+.serp-config-update {
+    .percent input { width: 50px }
+
+    .table-sites {
+        min-height: 45px;
+        .site-item {
+            border-radius: 4px;
+            height: 45px;
+            cursor: move;
+            padding: 5px 2px 5px 10px;
+            margin: 0;
+
+            & > div { line-height: 33px }
+        }
+        .form-group { margin-bottom: 0 }
+    }
+
+    .table-active-sites {
+        background-color: #cbdada;
+        border-radius: 4px;
+        .site-item {
+            background-color: #cbdada;
+            &:hover { background-color: #dbecec; }
+        }
+    }
+    .table-free-sites {
+        background-color: #ffc194;
+        border-radius: 4px;
+
+        .site-item {
+            background-color: #ffc194;
+            &:hover { background-color: #ffddb0; }
+        }
+        .percent { display: none; }
+    }
+}
