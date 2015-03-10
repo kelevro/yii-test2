@@ -2,6 +2,7 @@
 
 namespace content\models\forms;
 
+use common\models\User;
 use content\models\Author;
 use content\models\Book;
 use Yii;
@@ -115,21 +116,16 @@ class BookForm extends Model
     {
         $exists = $this->book->isNewRecord
             ? []
-            : ArrayHelper::map($this->book->authors, 'id', 'name');
+            : ArrayHelper::getColumn($this->book->authors, 'id');
 
         $removed = array_diff($exists, $this->authors);
         $added   = array_diff($this->authors, $exists);
 
-        foreach (array_filter($removed) as $name) {
-            $this->book->unlink('authors', Author::findOne(['name' => $name]), true);
+        foreach (array_filter($removed) as $id) {
+            $this->book->unlink('authors', Author::findOne(intval($id)), true);
         }
-        foreach (array_filter($added) as $name) {
-            if (($model = Author::findOne(['name' => $name])) == null) {
-                $model          = new Author;
-                $model->name    = $name;
-                $model->save();
-            }
-            $this->book->link('authors', $model);
+        foreach (array_filter($added) as $id) {
+            $this->book->link('authors', Author::findOne(intval($id)));
         }
         $this->book->authors_count = $this->book->getAuthors()->count();
         $this->book->save(false, ['authors_count']);
@@ -145,10 +141,10 @@ class BookForm extends Model
         $added   = array_diff($this->users, $exists);
 
         foreach (array_filter($removed) as $id) {
-            $this->book->unlink('users', Author::findOne($id), true);
+            $this->book->unlink('users', User::findOne($id), true);
         }
         foreach (array_filter($added) as $id) {
-            $this->book->link('users', Author::findOne($id));
+            $this->book->link('users', User::findOne($id));
         }
         $this->book->users_count = $this->book->getUsers()->count();
         $this->book->save(false, ['users_count']);
