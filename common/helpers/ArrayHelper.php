@@ -39,4 +39,14 @@ class ArrayHelper extends \yii\helpers\ArrayHelper
 
         return $items;
     }
+
+    public static function generateRandomKeys($start, $end, $count)
+    {
+        $result = [];
+        for ($i = 0; $i < $count; $i++) {
+            $result[] = mt_rand($start, $end);
+        }
+
+        return $result;
+    }
 }

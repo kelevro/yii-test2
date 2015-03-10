@@ -571,7 +571,7 @@
     return -1;
   };
 
-  // Generate an integer Array containing an arithmetic progression. A port of
+  // Generator an integer Array containing an arithmetic progression. A port of
   // the native Python `range()` function. See
   // [the Python documentation](http://docs.python.org/library/functions.html#range).
   _.range = function(start, stop, step) {
@@ -1143,7 +1143,7 @@
     });
   };
 
-  // Generate a unique integer id (unique within the entire client session).
+  // Generator a unique integer id (unique within the entire client session).
   // Useful for temporary DOM ids.
   var idCounter = 0;
   _.uniqueId = function(prefix) {

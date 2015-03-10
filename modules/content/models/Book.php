@@ -29,6 +29,14 @@ class Book extends \common\base\ActiveRecord
     }
 
     /**
+     * @return BookQuery
+     */
+    public static function find()
+    {
+        return new BookQuery(get_called_class());
+    }
+
+    /**
      * @inheritdoc
      */
     public function rules()

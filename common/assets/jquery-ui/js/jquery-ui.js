@@ -1118,7 +1118,7 @@ $.widget("ui.draggable", $.ui.mouse, {
 			relative: this._getRelativeOffset() //This is a relative to absolute position minus the actual position calculation - only used for relative positioned helper
 		});
 
-		//Generate the original position
+		//Generator the original position
 		this.originalPosition = this.position = this._generatePosition(event);
 		this.originalPageX = event.pageX;
 		this.originalPageY = event.pageY;
@@ -3695,7 +3695,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 		this.helper.css("position", "absolute");
 		this.cssPosition = this.helper.css("position");
 
-		//Generate the original position
+		//Generator the original position
 		this.originalPosition = this._generatePosition(event);
 		this.originalPageX = event.pageX;
 		this.originalPageY = event.pageY;
@@ -8360,7 +8360,7 @@ $.extend(Datepicker.prototype, {
 		}
 	},
 
-	/* Generate the date picker content. */
+	/* Generator the date picker content. */
 	_updateDatepicker: function(inst) {
 		this.maxRows = 4; //Reset the max number of rows being displayed (see #7043)
 		instActive = inst; // for delegate hover events
@@ -9178,7 +9178,7 @@ $.extend(Datepicker.prototype, {
 		});
 	},
 
-	/* Generate the HTML for the current state of the date picker. */
+	/* Generator the HTML for the current state of the date picker. */
 	_generateHTML: function(inst) {
 		var maxDraw, prevText, prev, nextText, next, currentText, gotoDate,
 			controls, buttonPanel, firstDay, showWeek, dayNames, dayNamesMin,
@@ -9362,7 +9362,7 @@ $.extend(Datepicker.prototype, {
 		return html;
 	},
 
-	/* Generate the month and year header. */
+	/* Generator the month and year header. */
 	_generateMonthYearHeader: function(inst, drawMonth, drawYear, minDate, maxDate,
 			secondary, monthNames, monthNamesShort) {
 

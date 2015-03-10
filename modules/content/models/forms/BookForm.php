@@ -106,20 +106,30 @@ class BookForm extends Model
         return true;
     }
 
+    public function getAuthorsList()
+    {
+        return ArrayHelper::map(Author::findAll([]), 'id', 'name');
+    }
+
     protected function processAuthors()
     {
         $exists = $this->book->isNewRecord
             ? []
-            : ArrayHelper::getColumn($this->book->authors, 'id');
+            : ArrayHelper::map($this->book->authors, 'id', 'name');
 
         $removed = array_diff($exists, $this->authors);
         $added   = array_diff($this->authors, $exists);
 
-        foreach (array_filter($removed) as $id) {
-            $this->book->unlink('authors', Author::findOne($id), true);
+        foreach (array_filter($removed) as $name) {
+            $this->book->unlink('authors', Author::findOne(['name' => $name]), true);
         }
-        foreach (array_filter($added) as $id) {
-            $this->book->link('authors', Author::findOne($id));
+        foreach (array_filter($added) as $name) {
+            if (($model = Author::findOne(['name' => $name])) == null) {
+                $model          = new Author;
+                $model->name    = $name;
+                $model->save();
+            }
+            $this->book->link('authors', $model);
         }
         $this->book->authors_count = $this->book->getAuthors()->count();
         $this->book->save(false, ['authors_count']);

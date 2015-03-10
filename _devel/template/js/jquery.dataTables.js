@@ -2403,7 +2403,7 @@
 			
 			if ( bSmart )
 			{
-				/* Generate the regular expression to use. Something along the lines of:
+				/* Generator the regular expression to use. Something along the lines of:
 				 * ^(?=.*?\bone\b)(?=.*?\btwo\b)(?=.*?\bthree\b).*$
 				 */
 				asSearch = bRegex ? sSearch.split( ' ' ) : _fnEscapeRegex( sSearch ).split( ' ' );

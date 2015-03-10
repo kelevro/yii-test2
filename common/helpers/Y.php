@@ -7,6 +7,10 @@
  */
 class Y
 {
+    public static function generateSlug($string, $lengthMax = 50)
+    {
+        return (string) \common\helpers\Stringy::create($string)->safeTruncate($lengthMax)->slugify();
+    }
 
     /**
      * @param string $sql

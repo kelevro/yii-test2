@@ -21,6 +21,15 @@ return [
     'components' => [
         'db'       => $dbs['db'],
 
+        'sphinx' => [
+            'class' => 'yii\sphinx\Connection',
+            'dsn' => 'mysql:host=127.0.0.1;port=9306;',
+            'username' => '',
+            'password' => '',
+            'charset'        => 'utf8',
+            'emulatePrepare' => true,
+        ],
+
         'cache'      => require ROOT . '/etc/cache.php',
 
         'elog'       => [
@@ -38,6 +47,13 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName'  => false,
+            'rules'           => [
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'controller' => ['books' => 'search/book'],
+                    'only'  => ['index'],
+                ],
+            ]
         ],
     ],
     'params'     => require_once 'params.php',

@@ -870,7 +870,7 @@ Licensed under the MIT license.
                 neededColors = maxIndex + 1;
             }
 
-            // Generate all the colors, using first the option colors and then
+            // Generator all the colors, using first the option colors and then
             // variations on those colors once they're exhausted.
 
             var c, colors = [], colorPool = options.colors,
@@ -2572,7 +2572,7 @@ Licensed under the MIT license.
                 }
             }
 
-            // Generate markup for the list of entries, in their final order
+            // Generator markup for the list of entries, in their final order
 
             for (var i = 0; i < entries.length; ++i) {
 
