@@ -5,7 +5,7 @@ $form = \yii\widgets\ActiveForm::begin(['options' => ['class' => 'form-signin'],
            'fieldConfig' => ['template' => "{input}\n{error}"]])
 ?>
 <div class="login-wrapper">
-    <a href="/" class="logo-text">RK Electronics</a>
+    <a href="/" class="logo-text">Yii test</a>
 
     <div class="box">
         <div class="content-wrap">
